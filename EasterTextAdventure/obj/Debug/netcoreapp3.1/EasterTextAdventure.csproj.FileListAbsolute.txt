@@ -1,0 +1,15 @@
+C:\Users\David\source\repos\EasterTextAdventure\EasterTextAdventure\obj\Debug\netcoreapp3.1\EasterTextAdventure.csprojAssemblyReference.cache
+C:\Users\David\source\repos\EasterTextAdventure\EasterTextAdventure\obj\Debug\netcoreapp3.1\EasterTextAdventure.AssemblyInfoInputs.cache
+C:\Users\David\source\repos\EasterTextAdventure\EasterTextAdventure\obj\Debug\netcoreapp3.1\EasterTextAdventure.AssemblyInfo.cs
+C:\Users\David\source\repos\EasterTextAdventure\EasterTextAdventure\obj\Debug\netcoreapp3.1\EasterTextAdventure.csproj.CoreCompileInputs.cache
+C:\Users\David\source\repos\EasterTextAdventure\EasterTextAdventure\bin\Debug\netcoreapp3.1\EasterTextAdventure.exe
+C:\Users\David\source\repos\EasterTextAdventure\EasterTextAdventure\bin\Debug\netcoreapp3.1\Art\bunny.txt
+C:\Users\David\source\repos\EasterTextAdventure\EasterTextAdventure\bin\Debug\netcoreapp3.1\Art\bunny2.txt
+C:\Users\David\source\repos\EasterTextAdventure\EasterTextAdventure\bin\Debug\netcoreapp3.1\EasterTextAdventure.deps.json
+C:\Users\David\source\repos\EasterTextAdventure\EasterTextAdventure\bin\Debug\netcoreapp3.1\EasterTextAdventure.runtimeconfig.json
+C:\Users\David\source\repos\EasterTextAdventure\EasterTextAdventure\bin\Debug\netcoreapp3.1\EasterTextAdventure.runtimeconfig.dev.json
+C:\Users\David\source\repos\EasterTextAdventure\EasterTextAdventure\bin\Debug\netcoreapp3.1\EasterTextAdventure.dll
+C:\Users\David\source\repos\EasterTextAdventure\EasterTextAdventure\bin\Debug\netcoreapp3.1\EasterTextAdventure.pdb
+C:\Users\David\source\repos\EasterTextAdventure\EasterTextAdventure\obj\Debug\netcoreapp3.1\EasterTextAdventure.dll
+C:\Users\David\source\repos\EasterTextAdventure\EasterTextAdventure\obj\Debug\netcoreapp3.1\EasterTextAdventure.pdb
+C:\Users\David\source\repos\EasterTextAdventure\EasterTextAdventure\obj\Debug\netcoreapp3.1\EasterTextAdventure.genruntimeconfig.cache
