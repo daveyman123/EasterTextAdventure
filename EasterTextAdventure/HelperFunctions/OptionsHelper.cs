@@ -7,6 +7,7 @@ namespace EasterTextAdventure.HelperFunctions
    class OptionsHelper
 
 {
+        
     int selectedIndex;
     String[] opt = new String[] { "Go to the North Pole(GO HERE FIRST)", "Go to Main Street", "View INVENTORY", "Exit Game" };
     string prompt = "";
@@ -36,12 +37,13 @@ namespace EasterTextAdventure.HelperFunctions
     {
 
 
+            string output2 = "";
 
+            string output = "";
 
-        string output = "";
         output += "\n" + prompt + "\n";
-        output += "\nUse the arrow keys to select your choice and press enter\n";
-        output += "\nYour options are: \n";
+        output2 += "\nUse the arrow keys to select your choice and press enter\n";
+        output2 += "\nYour options are:\n";
 
 
         string prefix;
@@ -53,6 +55,7 @@ namespace EasterTextAdventure.HelperFunctions
             if (i == selectedIndex)
             {
                 prefix = "*";
+               
 
             }
             else
@@ -61,12 +64,14 @@ namespace EasterTextAdventure.HelperFunctions
 
             }
 
-            output += prefix + opt[i] + "\n";
+            output2 += prefix + opt[i] + "\n";
 
         }
-
-
-        Console.WriteLine(output);
+    
+            Console.WriteLine(output);
+            Console.SetCursorPosition(0, 24);
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            Console.WriteLine(output2);
 
 
 

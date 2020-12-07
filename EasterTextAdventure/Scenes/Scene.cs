@@ -12,7 +12,8 @@ namespace EasterTextAdventure.Scenes
         public string sceneArt;
         protected Game myGame;
         public string text;
-
+        //create the text that you will add to the actual printed text
+        public string addText;
         public string[] options;
         public OptionsHelper opt_helper;
         public int optionsChoice;
@@ -31,7 +32,8 @@ namespace EasterTextAdventure.Scenes
         virtual public void Run()
         {
             Console.Clear();
-            text = text + "\n\n" + sceneArt;
+            
+            text = HelperFunctions.ArtReadHelper.write(addText) + "\n\n" + sceneArt;
             opt_helper = new OptionsHelper(text, options);
             optionsChoice = opt_helper.MenuChoice();
             // Runs the actual scene logic
