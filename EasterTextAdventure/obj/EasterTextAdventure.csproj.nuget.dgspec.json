@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\David\\source\\repos\\EasterTextAdventure\\EasterTextAdventure\\EasterTextAdventure.csproj": {}
+    "C:\\Users\\daveyman123\\Source\\Repos\\EasterTextAdventure\\EasterTextAdventure\\EasterTextAdventure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\David\\source\\repos\\EasterTextAdventure\\EasterTextAdventure\\EasterTextAdventure.csproj": {
+    "C:\\Users\\daveyman123\\Source\\Repos\\EasterTextAdventure\\EasterTextAdventure\\EasterTextAdventure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\David\\source\\repos\\EasterTextAdventure\\EasterTextAdventure\\EasterTextAdventure.csproj",
+        "projectUniqueName": "C:\\Users\\daveyman123\\Source\\Repos\\EasterTextAdventure\\EasterTextAdventure\\EasterTextAdventure.csproj",
         "projectName": "EasterTextAdventure",
-        "projectPath": "C:\\Users\\David\\source\\repos\\EasterTextAdventure\\EasterTextAdventure\\EasterTextAdventure.csproj",
-        "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\David\\source\\repos\\EasterTextAdventure\\EasterTextAdventure\\obj\\",
+        "projectPath": "C:\\Users\\daveyman123\\Source\\Repos\\EasterTextAdventure\\EasterTextAdventure\\EasterTextAdventure.csproj",
+        "packagesPath": "C:\\Users\\daveyman123\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\daveyman123\\Source\\Repos\\EasterTextAdventure\\EasterTextAdventure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\daveyman123\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -52,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

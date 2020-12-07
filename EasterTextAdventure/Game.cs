@@ -8,6 +8,8 @@ namespace EasterTextAdventure
         //inventory
         public Inventory myInventory;
 
+        public InventoryScene myInventoryScene;
+
 
         //title scene
         public Title myTitleScene;
@@ -31,6 +33,8 @@ namespace EasterTextAdventure
         {
             //instantiate the inventory
             myInventory = new Inventory();
+
+            myInventoryScene = new InventoryScene(this);
 
             //instantiate the scenes
             myTitleScene = new Title(this);

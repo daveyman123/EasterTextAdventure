@@ -30,6 +30,7 @@ namespace EasterTextAdventure.Scenes
 
         virtual public void Run()
         {
+            Console.Clear();
             text = text + "\n\n" + sceneArt;
             opt_helper = new OptionsHelper(text, options);
             optionsChoice = opt_helper.MenuChoice();

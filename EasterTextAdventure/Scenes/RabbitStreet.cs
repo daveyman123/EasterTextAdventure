@@ -12,7 +12,7 @@ namespace EasterTextAdventure.Scenes
         {
             sceneArt = Art.Art.Bunny();
             text = "Welcome to the game.";
-            options = new String[] { "Talk to vinnie", "Go to the Giovanni's Garden", "Exit Game" };
+            options = new String[] { "Talk to vinnie", "Go to the Giovanni's Garden", "View INVENTORY","Exit Game" };
          
         }
 
@@ -31,6 +31,10 @@ namespace EasterTextAdventure.Scenes
                     base.Run();
                     return;
                 case 3:
+                    myGame.myInventoryScene.Run();
+                    myGame.myRabbitStreetScene.Run();
+                    return;
+                case 4:
                     
                     if (ConsoleUtils.QuitConsole()) { Environment.Exit(0); } else { myGame.myCreditsScene.Run(); }
                     return;

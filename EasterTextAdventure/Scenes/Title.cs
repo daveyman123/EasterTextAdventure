@@ -12,8 +12,7 @@ namespace EasterTextAdventure.Scenes
         public Title (Game game) : base(game)
         {
             sceneArt = Art.Art.Title();
-            text = "Welcome to the game\n\n" +
-                sceneArt;
+            text = "Welcome to the game";
             options = new String[] { "Play", "Credits", "Exit Game" };
          
         }
