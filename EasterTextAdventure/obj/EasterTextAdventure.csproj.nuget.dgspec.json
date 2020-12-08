@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\daveyman123\\Source\\Repos\\EasterTextAdventure\\EasterTextAdventure\\EasterTextAdventure.csproj": {}
+    "C:\\Users\\daveyman123\\source\\repos\\EasterTextAdventure\\EasterTextAdventure\\EasterTextAdventure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\daveyman123\\Source\\Repos\\EasterTextAdventure\\EasterTextAdventure\\EasterTextAdventure.csproj": {
+    "C:\\Users\\daveyman123\\source\\repos\\EasterTextAdventure\\EasterTextAdventure\\EasterTextAdventure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\daveyman123\\Source\\Repos\\EasterTextAdventure\\EasterTextAdventure\\EasterTextAdventure.csproj",
+        "projectUniqueName": "C:\\Users\\daveyman123\\source\\repos\\EasterTextAdventure\\EasterTextAdventure\\EasterTextAdventure.csproj",
         "projectName": "EasterTextAdventure",
-        "projectPath": "C:\\Users\\daveyman123\\Source\\Repos\\EasterTextAdventure\\EasterTextAdventure\\EasterTextAdventure.csproj",
+        "projectPath": "C:\\Users\\daveyman123\\source\\repos\\EasterTextAdventure\\EasterTextAdventure\\EasterTextAdventure.csproj",
         "packagesPath": "C:\\Users\\daveyman123\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\daveyman123\\Source\\Repos\\EasterTextAdventure\\EasterTextAdventure\\obj\\",
+        "outputPath": "C:\\Users\\daveyman123\\source\\repos\\EasterTextAdventure\\EasterTextAdventure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\daveyman123\\AppData\\Roaming\\NuGet\\NuGet.Config",
