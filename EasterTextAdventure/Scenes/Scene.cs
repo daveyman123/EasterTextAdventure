@@ -33,7 +33,7 @@ namespace EasterTextAdventure.Scenes
         {
             Console.Clear();
             
-            text = HelperFunctions.ArtReadHelper.write(addText) + "\n\n" + sceneArt;
+            text = sceneArt + "\n" + HelperFunctions.ArtReadHelper.write(addText) + "\n\n" ;
             opt_helper = new OptionsHelper(text, options);
             optionsChoice = opt_helper.MenuChoice();
             // Runs the actual scene logic

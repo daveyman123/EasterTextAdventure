@@ -9,10 +9,16 @@ namespace EasterTextAdventure.HelperFunctions
     {
         public static String ascii(string FileName)
         {
-
+            string text ="";
             string FileUrl = "Art/" + FileName + ".txt";
+            var lineCount = File.ReadAllLines(FileUrl).Length;
 
-            string text = File.ReadAllText(FileUrl);
+            text = File.ReadAllText(FileUrl);
+            while (lineCount < 17)
+            {
+                text += "\n";
+                lineCount += 1;
+            }
             return text;
         }
         public static string write(string sentence)

@@ -36,17 +36,23 @@ namespace EasterTextAdventure.HelperFunctions
     public void DisplayOptions()
     {
 
+            int optionsHalfScreen = 50;
+            int promptHelpHalfScreen = 33;
 
             string output2 = "";
 
             string output = "";
 
-        output += "\n" + prompt + "\n";
-        output2 += "\nUse the arrow keys to select your choice and press enter\n";
-        output2 += "\nYour options are:\n";
-
-
-        string prefix;
+       
+            output2 += "Use the arrow keys to select your choice and press enter";
+            // output2 += "\nYour options are:\n";
+            Console.WriteLine(prompt);
+            Console.SetCursorPosition(promptHelpHalfScreen, 23);
+            Console.WriteLine(output2);
+            Console.SetCursorPosition(promptHelpHalfScreen, 24);
+            Console.WriteLine("`````````````````````````````````````````````````````````");
+           
+            string prefix;
         for (int i = 0; i < opt.Length; i++)
         {
             string currentOption = opt[i];
@@ -55,23 +61,23 @@ namespace EasterTextAdventure.HelperFunctions
             if (i == selectedIndex)
             {
                 prefix = "*";
-               
-
-            }
+                    Console.BackgroundColor = ConsoleColor.White;
+                Console.SetCursorPosition(optionsHalfScreen, 25 + i);
+                    Console.WriteLine(prefix + currentOption);
+                    Console.BackgroundColor = ConsoleColor.Black;
+                }
             else
             {
                 prefix = " ";
-
-            }
-
-            output2 += prefix + opt[i] + "\n";
+                    Console.SetCursorPosition(optionsHalfScreen, 25 + i);
+                    Console.WriteLine(prefix + currentOption);
+                }
+                
+               
 
         }
-    
-            Console.WriteLine(output);
-            Console.SetCursorPosition(0, 24);
-            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            Console.WriteLine(output2);
+           
+           
 
 
 
