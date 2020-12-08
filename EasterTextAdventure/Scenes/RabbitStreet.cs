@@ -7,13 +7,16 @@ namespace EasterTextAdventure.Scenes
 {
     class RabbitStreet : Scene
     {
+       string RSsceneArt = Art.Art.Bunny();
+       string RSaddText = "You are at Rabbit Street. Vinnie looks busy";
+       string[] RSoptions = new String[] { "Talk to vinnie", "Go to the Giovanni's Garden", "View INVENTORY","Exit Game" };
 
-        public RabbitStreet (Game game) : base(game)
+
+    public RabbitStreet (Game game) : base(game)
         {
-            sceneArt = Art.Art.Bunny();
-            addText = "Welcome to the game.";
-            options = new String[] { "Talk to vinnie", "Go to the Giovanni's Garden", "View INVENTORY","Exit Game" };
-         
+            sceneArt = RSsceneArt;
+            addText = RSaddText;
+            options = RSoptions;
         }
 
         public override void Run()
@@ -42,10 +45,16 @@ namespace EasterTextAdventure.Scenes
 
                             options = new string[] { "OK"};
 
-                            //back to the beginning of mainstreet scene
-                            sceneArt = Art.Art.Bunny();
-                    
-                            //stuck here
+                            
+
+
+                            
+                            base.Run();
+
+                            //set everything back to the way it was at the beginning of mainstreet scene
+                            sceneArt = RSsceneArt;
+                            addText = RSaddText;
+                            options = RSoptions;
                             myGame.myRabbitStreetScene.Run();
                             return;
                             

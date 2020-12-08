@@ -19,6 +19,7 @@ namespace EasterTextAdventure.HelperFunctions
                 text += "\n";
                 lineCount += 1;
             }
+            text += "``````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````";
             return text;
         }
         public static string write(string sentence)

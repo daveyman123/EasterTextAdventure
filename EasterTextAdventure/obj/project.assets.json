@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\daveyman123\\.nuget\\packages\\": {}
+    "C:\\Users\\David\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\daveyman123\\Source\\Repos\\EasterTextAdventure3\\EasterTextAdventure\\EasterTextAdventure.csproj",
+      "projectUniqueName": "C:\\Users\\David\\source\\repos\\EasterTextAdventure\\EasterTextAdventure\\EasterTextAdventure.csproj",
       "projectName": "EasterTextAdventure",
-      "projectPath": "C:\\Users\\daveyman123\\Source\\Repos\\EasterTextAdventure3\\EasterTextAdventure\\EasterTextAdventure.csproj",
-      "packagesPath": "C:\\Users\\daveyman123\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\daveyman123\\Source\\Repos\\EasterTextAdventure3\\EasterTextAdventure\\obj\\",
+      "projectPath": "C:\\Users\\David\\source\\repos\\EasterTextAdventure\\EasterTextAdventure\\EasterTextAdventure.csproj",
+      "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\David\\source\\repos\\EasterTextAdventure\\EasterTextAdventure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\daveyman123\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
