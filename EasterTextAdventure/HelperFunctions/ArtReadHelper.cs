@@ -12,8 +12,35 @@ namespace EasterTextAdventure.HelperFunctions
             string text ="";
             string FileUrl = "Art/" + FileName + ".txt";
             var lineCount = File.ReadAllLines(FileUrl).Length;
-
-            text = File.ReadAllText(FileUrl);
+            text += "``````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````";
+            System.Collections.Generic.IEnumerable<String> lines = File.ReadLines(FileUrl);
+            int longestCount = 0;
+            
+            foreach(string line in lines)
+            {
+                
+                if (line.Length > longestCount)
+                {
+                    longestCount = line.Length;
+                }
+                
+               
+            }
+            longestCount = 65 - longestCount/2;
+            foreach(string line in lines)
+            {
+                string newLines = "";
+                int x = 0;
+                newLines += "|";
+                while (x < longestCount)
+                {
+                    newLines += " ";
+                    x += 1;
+                }
+                
+                text +="\n" + newLines + line;
+            }
+            //text += File.ReadAllText(FileUrl);
             while (lineCount < 17)
             {
                 text += "\n";
