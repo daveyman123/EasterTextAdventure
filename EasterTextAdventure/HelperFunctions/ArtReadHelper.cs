@@ -37,8 +37,18 @@ namespace EasterTextAdventure.HelperFunctions
                     newLines += " ";
                     x += 1;
                 }
+                string endLine = "";
                 
-                text +="\n" + newLines + line;
+                int h = 130 - (line.Length + newLines.Length);
+                while (h < 122)
+                {
+                    endLine += " ";
+                    h +=1;
+                }
+                endLine += "|"; 
+
+                text +="\n" + newLines + line + endLine;
+
             }
             //text += File.ReadAllText(FileUrl);
             while (lineCount < 17)
