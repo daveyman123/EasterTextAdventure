@@ -9,7 +9,7 @@ namespace EasterTextAdventure.HelperFunctions
 {
         
     int selectedIndex;
-    String[] opt = new String[] { "Go to the North Pole(GO HERE FIRST)", "Go to Main Street", "View INVENTORY", "Exit Game" };
+    String[] opt = new String[] { "Play", "Credits", "Exit Game" };
     string prompt = "";
 
 
@@ -36,59 +36,138 @@ namespace EasterTextAdventure.HelperFunctions
     public void DisplayOptions()
     {
 
-            int optionsHalfScreen = 50;
+            int optionsHalfScreen = 33;
             int promptHelpHalfScreen = 33;
+            int optBoxLen = 25;
 
             string output2 = "";
 
             string output = "";
 
        
-            output2 += "Use the arrow keys to select your choice and press enter";
+            
             // output2 += "\nYour options are:\n";
             Console.WriteLine(prompt);
             Console.SetCursorPosition(promptHelpHalfScreen, 23);
             Console.WriteLine(output2);
             Console.SetCursorPosition(promptHelpHalfScreen, 24);
-            Console.WriteLine("`````````````````````````````````````````````````````````");
-           
+            
+                               
+            Console.WriteLine("█████▓▒░    OPTIONS    ░▒▓█████");
+
+            int count = 0;
             string prefix;
         for (int i = 0; i < opt.Length; i++)
         {
+                
             string currentOption = opt[i];
+            string currentOptionModified = "";
+
+
+                int optExtend = 0;
 
 
             if (i == selectedIndex)
             {
-                prefix = "*";
+                prefix = "██*";
                     Console.BackgroundColor = ConsoleColor.White;
                 Console.SetCursorPosition(optionsHalfScreen, 25 + i);
-                    Console.WriteLine(prefix + currentOption);
+                    currentOptionModified = currentOption + " ";
+                    int z = currentOption.Length;
+
+
+                    int optionCount = 25;
+                    for (int n = 0; n < opt.Length; n++)
+                    {
+                        
+
+                        string currentOption2 = opt[n];
+                        if (currentOption2.Length > optionCount)
+                        {
+                            optionCount = currentOption2.Length;
+                        }
+                    }
+                    optExtend = optionCount;
+                    while (z < optionCount)
+                    {
+
+
+                        currentOptionModified += " ";
+                        z += 1;
+                    }
+
+                    currentOptionModified += "██";
+                    Console.WriteLine(prefix + currentOptionModified);
+
                     Console.BackgroundColor = ConsoleColor.Black;
                 }
             else
             {
-                prefix = " ";
+                prefix = "██ ";
                     Console.SetCursorPosition(optionsHalfScreen, 25 + i);
-                    Console.WriteLine(prefix + currentOption);
+                    currentOptionModified = currentOption + " ";
+                    int z = currentOption.Length;
+
+
+                    int optionCount = 25;
+                    for (int n = 0; n < opt.Length; n++)
+                    {
+
+
+                        string currentOption2 = opt[n];
+                        if (currentOption2.Length > optionCount)
+                        {
+                            optionCount = currentOption2.Length;
+                        }
+                    }
+                    optExtend = optionCount;
+                    while (z < optionCount)
+                    {
+
+
+                        currentOptionModified += " ";
+                        z += 1;
+                    }
+                    currentOptionModified += "██";
+                    Console.WriteLine(prefix + currentOptionModified);
                 }
-                
+
+                Console.SetCursorPosition(promptHelpHalfScreen + 31, 24);
                
+                string x = "";
+                for (int l = 0; l < optExtend-25; l++)
+                {
+                    x += "█";
+
+                }
+                Console.WriteLine(x);
+                Console.SetCursorPosition(promptHelpHalfScreen, 25 + opt.Length);
+                //extend top line of options box
+                string j = "";
+                for (int l = 0; l < optExtend+6; l++)
+                {
+                    
+                        j+= "█";
+
+                }
+                Console.WriteLine(j);
+                optExtend = 0;
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
 
         }
-           
-           
-
-
-
-
-
-
-
-
-
-
-    }
     public int MenuChoice()
     {
         ConsoleKey keyPressed;

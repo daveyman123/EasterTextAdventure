@@ -8,8 +8,8 @@ namespace EasterTextAdventure.Scenes
     class RabbitStreet : Scene
     {
        string RSsceneArt = Art.Art.Bunny();
-       string RSaddText = "You are at Rabbit Street. Vinnie looks busy";
-       string[] RSoptions = new String[] { "Talk to vinnie", "Go to the Giovanni's Garden", "View INVENTORY","Exit Game" };
+       string RSaddText = "You are at Rabbit Street. Vinnie, the rabbit, looks busy.";
+       string[] RSoptions = new String[] { "Talk to vinnie", "Giovanni's Garden", "Inventory","Exit Game" };
 
 
     public RabbitStreet (Game game) : base(game)

@@ -9,11 +9,48 @@ namespace EasterTextAdventure.HelperFunctions
     {
         public static String ascii(string FileName)
         {
-            string text ="";
+            string text = "";
             string FileUrl = "Art/" + FileName + ".txt";
             var lineCount = File.ReadAllLines(FileUrl).Length;
+            text += "``````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````";
+            System.Collections.Generic.IEnumerable<String> lines = File.ReadLines(FileUrl);
+            int longestCount = 0;
 
-            text = File.ReadAllText(FileUrl);
+            foreach (string line in lines)
+            {
+
+                if (line.Length > longestCount)
+                {
+                    longestCount = line.Length;
+                }
+
+
+            }
+            longestCount = 65 - longestCount / 2;
+            foreach (string line in lines)
+            {
+                string newLines = "";
+                int x = 0;
+                newLines += "|";
+                while (x < longestCount)
+                {
+                    newLines += " ";
+                    x += 1;
+                }
+                string endLine = "";
+
+                int h = 130 - (line.Length + newLines.Length);
+                while (h < 122)
+                {
+                    endLine += " ";
+                    h += 1;
+                }
+                endLine += "|";
+
+                text += "\n" + newLines + line;
+
+            }
+            //text += File.ReadAllText(FileUrl);
             while (lineCount < 17)
             {
                 text += "\n";
@@ -40,7 +77,7 @@ namespace EasterTextAdventure.HelperFunctions
                             sentence_updated += sentence[z];
                             if (sentence[z].ToString() == (" "))
                             {
-                                sentence_updated +="\n";
+                                sentence_updated += "\n";
                                 break;
                             }
 
