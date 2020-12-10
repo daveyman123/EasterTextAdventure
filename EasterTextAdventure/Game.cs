@@ -21,6 +21,9 @@ namespace EasterTextAdventure
         // credits scene
         public Credits myCreditsScene;
 
+        //tortoise scene
+        public Tortoise myTortoiseScene;
+
 
         //game won
         protected bool gameWon;
@@ -48,6 +51,8 @@ namespace EasterTextAdventure
             playAgain = true;
 
             myCreditsScene = new Credits(this);
+
+            myTortoiseScene = new Tortoise(this);
 
 
 

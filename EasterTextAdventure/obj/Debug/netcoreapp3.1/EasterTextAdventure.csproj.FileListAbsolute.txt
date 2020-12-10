@@ -45,3 +45,4 @@ C:\Users\daveyman123\Source\Repos\EasterTextAdventure3\EasterTextAdventure\obj\D
 C:\Users\daveyman123\Source\Repos\EasterTextAdventure3\EasterTextAdventure\obj\Debug\netcoreapp3.1\EasterTextAdventure.genruntimeconfig.cache
 C:\Users\daveyman123\Source\Repos\EasterTextAdventure3\EasterTextAdventure\bin\Debug\netcoreapp3.1\Art\title.txt
 C:\Users\David\source\repos\EasterTextAdventure\EasterTextAdventure\bin\Debug\netcoreapp3.1\Art\title.txt
+C:\Users\David\source\repos\EasterTextAdventure\EasterTextAdventure\bin\Debug\netcoreapp3.1\Art\tortoise.txt

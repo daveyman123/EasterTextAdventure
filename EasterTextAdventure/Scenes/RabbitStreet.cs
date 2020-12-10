@@ -9,7 +9,7 @@ namespace EasterTextAdventure.Scenes
     {
        string RSsceneArt = Art.Art.Bunny();
        string RSaddText = "You are at Rabbit Street. Vinnie, the rabbit, looks busy.";
-       string[] RSoptions = new String[] { "Talk to Vinnie the rabbit", "Giovanni's Garden", "Inventory","Exit Game" };
+       string[] RSoptions = new String[] { "Talk to Vinnie the rabbit", "Giovanni's Garden", "Go to the tortoises house", "Inventory","Exit Game" };
 
 
     public RabbitStreet (Game game) : base(game)
@@ -62,10 +62,13 @@ namespace EasterTextAdventure.Scenes
 
                     return;
                 case 3:
+                    myGame.myTortoiseScene.Run();
+                    return;
+                case 4:
                     myGame.myInventoryScene.Run();
                     myGame.myRabbitStreetScene.Run();
                     return;
-                case 4:
+                case 5:
                     
                     if (ConsoleUtils.QuitConsole()) { Environment.Exit(0); } else { myGame.myRabbitStreetScene.Run(); }
                     return;
@@ -110,7 +113,7 @@ namespace EasterTextAdventure.Scenes
 
                     return;
                 case 2:
-                    addText = "You wouldnt believe the things Giovanni put us through in order that he could earn his precious title of 'King' of Rabbit Street. But why are you asking me? Everyone knows I'm not a good source of info. Thats why they call me stupid vinney. Honestly, take a bit of rabbit advice and get out of rabbit street while you still can. else you'll end up like me pilfering through baskets of leftover easter baskets looking for anything salvagable.....";
+                    addText = "You wouldnt believe the things Giovanni put us through in order that he could earn his precious title of 'King' of Rabbit Street. But why are you asking me? Everyone knows I'm not a good source of info. Thats why they call me stupid vinney.";
                     options = new string[] { "Ok Vinnie, I understand you must have seen a lot" };
 
 

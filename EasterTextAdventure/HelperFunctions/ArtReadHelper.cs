@@ -12,7 +12,8 @@ namespace EasterTextAdventure.HelperFunctions
             string text = "";
             string FileUrl = "Art/" + FileName + ".txt";
             var lineCount = File.ReadAllLines(FileUrl).Length;
-            text += "``````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````";
+            text += "\n";
+            text += "                ___________________________________________________________________________________________________               ";
             System.Collections.Generic.IEnumerable<String> lines = File.ReadLines(FileUrl);
             int longestCount = 0;
 
@@ -26,37 +27,47 @@ namespace EasterTextAdventure.HelperFunctions
 
 
             }
-            longestCount = 65 - longestCount / 2;
+            longestCount = 50 - longestCount / 2;
+            string newLines = "";
+            string endLine = "";
+            string lineLen = "";
             foreach (string line in lines)
             {
-                string newLines = "";
+                newLines = "";
                 int x = 0;
-                newLines += "|";
+                newLines += "               |";
                 while (x < longestCount)
                 {
                     newLines += " ";
                     x += 1;
                 }
-                string endLine = "";
+                endLine = "";
 
-                int h = 130 - (line.Length + newLines.Length);
-                while (h < 122)
+                int h = (line.Length + newLines.Length);
+                while (h < 115)
                 {
                     endLine += " ";
                     h += 1;
                 }
                 endLine += "|";
 
-                text += "\n" + newLines + line;
-
+                text += "\n" + newLines + line + endLine;
+                lineLen = line;
             }
             //text += File.ReadAllText(FileUrl);
             while (lineCount < 17)
             {
-                text += "\n";
+                string z = "";
+                for (int i = 0; i < lineLen.Length; i++)
+                {
+                    z += " ";
+                }
+                text += "\n" + newLines + z + endLine;
                 lineCount += 1;
             }
-            text += "``````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````";
+
+            text += "\n               |_____________________________________ Easter Text Adventure _______________________________________|              \n";
+
             return text;
         }
         public static string write(string sentence)

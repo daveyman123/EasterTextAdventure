@@ -10,6 +10,10 @@ namespace EasterTextAdventure.Art
         {
             return ArtReadHelper.ascii("bunny");
         }
+        public static string Tortoise()
+        {
+            return ArtReadHelper.ascii("tortoise");
+        }
         public static string Title()
         {
             return ArtReadHelper.ascii("title");
