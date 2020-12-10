@@ -52,86 +52,7 @@ namespace EasterTextAdventure.Scenes
                     //vinnies options
 
 
-                    base.Run();
-                    switch (optionsChoice)
-                    {
-                        case 1:
-                            //addText = "Rabbit street is the place where all your dreams can come true kid, or NOT! Collect enough carrots and you dont gotta worry bout nothing. and thats the truth!";
-                            addText = "Rabbit Street is the place of hopes and dreams or dreams of hopes, ya'see? Become King of rabbit street and you can get all the carrots. wooo woo im zaney vinnie. yup ZANEY vinnie the rabbit, thats what they call me!";
-                            options = new String[] { "OK" };
-                            base.Run();
-                        
-                            addText = "You kids never understand. let me get back to sorting, or Giovanni's gonna whip my ass!";
-
-                            options = new string[] { "OK, just one more question though.", "I'll let you get back to whatever you were doing."};
-                            base.Run();
-                            switch (optionsChoice)
-                            {
-                                case 1:
-                                    TalkVinnie();
-                                    
-                                    break;
-                                case 2:
-                                    Reset();
-                                    
-                                    break;
-                            }
-
-
-
-
-
-
-
-                            myGame.myRabbitStreetScene.Run();
-                            
-                            return;
-                        case 2:
-                            addText = "You wouldnt believe the things Giovanni put us through in order that he could earn his precious title of 'King' of Rabbit Street. But why are you asking me? Everyone knows I'm not a good source of info. Thats why they call me stupid vinney. Honestly, take a bit of rabbit advice and get out of rabbit street while you still can. else you'll end up like me pilfering through baskets of leftover easter baskets looking for anything salvagable.....";
-                            options = new string[] { "Ok Vinnie, I understand you must have seen a lot" };
-                            
-                           
-                            myGame.myRabbitStreetScene.Run();
-
-                            return;
-                        case 3:
-                            addText = "Giovanni is for now kid. woo woo zippidy doo da. long live the king.";
-                            options = new string[] { "Why is Giovanni king?", "Leave Vinnie alone" };
-                            base.Run();
-                            switch (optionsChoice)
-                            {
-                                case 1:
-                                    addText = "Giovanni killed all the rival rabbit gang members. least thats what i hear. but I dont hear to good ya'hear?";
-                                    options = new string[] { "Leave Vinnie alone" };
-                                    base.Run();
-                       
-
-
-                                    addText = "alright kid i like you a little and i will be there to help you out.";
-                                    options = new string[] { "Ok, whatever, Vinnie" };
-                                    base.Run();
-                                    Reset();
-                                    myGame.myRabbitStreetScene.Run();
-
-                                    return;
-                                case 2:
-                                    addText = "alright kid i like you a little and i will be there to help you out.";
-                                    options = new string[] { "Ok, whatever, Vinnie" };
-                                    base.Run();
-                                    Reset();
-                                    myGame.myRabbitStreetScene.Run();
-                                    return;
-                            }
-                            return;
-                                case 4:
-                            Reset();
-                            myGame.myRabbitStreetScene.Run();
-                            return;
-
-                    }
-                
-              
-
+                    talkingVinnieSwitch();
                     
                     return;
                 case 2:
@@ -151,5 +72,92 @@ namespace EasterTextAdventure.Scenes
 
             }
         }
+        public void talkingVinnieSwitch()
+        {
+            base.Run();
+            switch (optionsChoice)
+            {
+                case 1:
+                    //addText = "Rabbit street is the place where all your dreams can come true kid, or NOT! Collect enough carrots and you dont gotta worry bout nothing. and thats the truth!";
+                    addText = "Rabbit Street is the place of hopes and dreams or dreams of hopes, ya'see? Become King of rabbit street and you can get all the carrots. wooo woo im zaney vinnie. yup ZANEY vinnie the rabbit, thats what they call me!";
+                    options = new String[] { "OK" };
+                    base.Run();
+
+                    addText = "You kids never understand. let me get back to sorting, or Giovanni's gonna whip my ass!";
+
+                    options = new string[] { "OK, just one more question though.", "I'll let you get back to whatever you were doing." };
+                    base.Run();
+                    switch (optionsChoice)
+                    {
+                        case 1:
+                            TalkVinnie();
+                           
+                            talkingVinnieSwitch();
+                            break;
+                        case 2:
+                            Reset();
+                            myGame.myRabbitStreetScene.Run();
+                            break;
+                    }
+
+
+
+
+
+
+
+                    myGame.myRabbitStreetScene.Run();
+
+                    return;
+                case 2:
+                    addText = "You wouldnt believe the things Giovanni put us through in order that he could earn his precious title of 'King' of Rabbit Street. But why are you asking me? Everyone knows I'm not a good source of info. Thats why they call me stupid vinney. Honestly, take a bit of rabbit advice and get out of rabbit street while you still can. else you'll end up like me pilfering through baskets of leftover easter baskets looking for anything salvagable.....";
+                    options = new string[] { "Ok Vinnie, I understand you must have seen a lot" };
+
+
+                    myGame.myRabbitStreetScene.Run();
+
+                    return;
+                case 3:
+                    addText = "Giovanni is for now kid. woo woo zippidy doo da. long live the king.";
+                    options = new string[] { "Why is Giovanni king?", "Leave Vinnie alone" };
+                    base.Run();
+                    switch (optionsChoice)
+                    {
+                        case 1:
+                            addText = "Giovanni killed all the rival rabbit gang members. least thats what i hear. but I dont hear to good ya'hear?";
+                            options = new string[] { "Leave Vinnie alone" };
+                            base.Run();
+
+
+
+                            addText = "alright kid i like you a little and i will be there to help you out.";
+                            options = new string[] { "Ok, whatever, Vinnie" };
+                            base.Run();
+                            Reset();
+                            myGame.myRabbitStreetScene.Run();
+
+                            return;
+                        case 2:
+                            addText = "alright kid i like you a little and i will be there to help you out.";
+                            options = new string[] { "Ok, whatever, Vinnie" };
+                            base.Run();
+                            Reset();
+                            myGame.myRabbitStreetScene.Run();
+                            return;
+                    }
+                    return;
+                case 4:
+                    Reset();
+                    myGame.myRabbitStreetScene.Run();
+                    return;
+
+            }
+
+
+
+
+            return;
+        }
+
     }
 }
