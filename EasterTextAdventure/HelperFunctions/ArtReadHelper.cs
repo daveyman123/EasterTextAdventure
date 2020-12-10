@@ -71,7 +71,7 @@ namespace EasterTextAdventure.HelperFunctions
                     {
                         int h = 1;
                         int z = i;
-                        while (h < 15)
+                        while (h < 15 && z < sentence.Length)
                         {
 
                             sentence_updated += sentence[z];

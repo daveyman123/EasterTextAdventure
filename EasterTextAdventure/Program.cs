@@ -29,7 +29,7 @@ namespace EasterTextAdventure
             Game myGame = new Game();
             myGame.Start();
         
-        ConsoleUtils.QuitConsole();
+       // ConsoleUtils.QuitConsole();
     }
 }
 }

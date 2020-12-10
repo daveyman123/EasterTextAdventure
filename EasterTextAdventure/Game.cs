@@ -47,6 +47,8 @@ namespace EasterTextAdventure
             //instantiate play again field
             playAgain = true;
 
+            myCreditsScene = new Credits(this);
+
 
 
         }

@@ -28,6 +28,7 @@ namespace EasterTextAdventure.Scenes
 
 
         }
+        
 
         virtual public void Run()
         {

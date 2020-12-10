@@ -11,10 +11,10 @@ namespace EasterTextAdventure.Scenes
         public Credits (Game game) : base(game)
         {
             sceneArt = Art.Art.Title();
-            text = "Thanks for playing the game\n\n" +
+            addText = "Thanks for playing the game\n\n" +
                 "\nArt for game:" +
                 "\nhttps://asciiart.website";
-            options = new String[] { "Exit", "Back to Title Menu" };
+            options = new String[] { "Exit", "Go to Title Menu" };
          
         }
 
