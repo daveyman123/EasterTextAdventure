@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Dgraf\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Dgraf\\.nuget\\packages"
+    ]
+  }
+}
