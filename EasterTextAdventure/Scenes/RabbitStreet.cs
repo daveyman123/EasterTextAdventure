@@ -33,7 +33,7 @@ namespace EasterTextAdventure.Scenes
         //talk to vinnie initial part
         private void TalkVinnie()
         {
-            addText = "Welcome to Rabbit Street Kid, Wadda ya want? wadda wadda-wad da ya wan? get it? I am the King of rabbit streety street, but you can be too!!!";
+            addText = "Welcome to Rabbit Street Kid, Wadda ya want? wadda wadda-wad da ya wan? get it? I am the King of rabbit streety street!";
             sceneArt = Art.Art.Bunny2();
             options = new String[] { "Whats Rabbit Street?", "How do I become the king of Rabbit Street?", "Who is actually the king of Rabbit Street?", "Leave Vinnie Alone" };
 

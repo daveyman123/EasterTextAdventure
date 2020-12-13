@@ -31,7 +31,7 @@ namespace EasterTextAdventure
             }
             else
             {
-                return "";
+                return "You already picked up the Jacket";
             };
         }
 

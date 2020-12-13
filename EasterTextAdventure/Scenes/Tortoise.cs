@@ -9,11 +9,12 @@ namespace EasterTextAdventure.Scenes
     class Tortoise : Scene
     {
         Item Jacket;
+        Items TortItems;
         public Tortoise (Game game) : base(game)
         {
 
             Jacket = new Item("Jacket", "A cool looking jacket that will keep you warm");
-            Items TortItems = new Items(Jacket);
+            TortItems = new Items(Jacket);
             sceneArt = Art.Art.Tortoise();
             addText = "Hi my names Thomas, so very nice to meet you\n" +
                 "There are some items here: " + TortItems.returnItem(Jacket.getName()).getName() ;
@@ -33,6 +34,7 @@ namespace EasterTextAdventure.Scenes
                 case 2:
                     
                     addText += "\n" + myGame.myInventory.invAdd(Jacket);
+                    TortItems.RemoveItem(Jacket);
                     myGame.myTortoiseScene.Run();
                     return;
                 case 3:
