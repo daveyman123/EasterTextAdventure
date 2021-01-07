@@ -24,6 +24,10 @@ namespace EasterTextAdventure
         //tortoise scene
         public Tortoise myTortoiseScene;
 
+        //finish line scene
+        public FinishLine myFinishLineScene;
+
+
 
         //game won
         protected bool gameWon;
@@ -40,6 +44,8 @@ namespace EasterTextAdventure
             myInventoryScene = new InventoryScene(this);
 
             //instantiate the scenes
+            myFinishLineScene = new FinishLine(this);
+
             myTitleScene = new Title(this);
 
            myRabbitStreetScene = new RabbitStreet(this);

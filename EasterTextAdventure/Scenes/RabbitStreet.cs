@@ -58,7 +58,7 @@ namespace EasterTextAdventure.Scenes
                 case 2:
 
                     //go to Giovannis Garden
-                    myGame.myCreditsScene.Run();
+                    myGame.myFinishLineScene.Run();
 
                     return;
                 case 3:

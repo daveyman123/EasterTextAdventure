@@ -63,3 +63,5 @@ C:\Users\Dgraf\source\repos\EasterTextAdventure\EasterTextAdventure\obj\Debug\ne
 C:\Users\Dgraf\source\repos\EasterTextAdventure\EasterTextAdventure\obj\Debug\netcoreapp3.1\EasterTextAdventure.dll
 C:\Users\Dgraf\source\repos\EasterTextAdventure\EasterTextAdventure\obj\Debug\netcoreapp3.1\EasterTextAdventure.pdb
 C:\Users\Dgraf\source\repos\EasterTextAdventure\EasterTextAdventure\obj\Debug\netcoreapp3.1\EasterTextAdventure.genruntimeconfig.cache
+C:\Users\Dgraf\source\repos\EasterTextAdventure\EasterTextAdventure\bin\Debug\netcoreapp3.1\Art\inventory.txt
+C:\Users\Dgraf\source\repos\EasterTextAdventure\EasterTextAdventure\bin\Debug\netcoreapp3.1\Art\flag.txt

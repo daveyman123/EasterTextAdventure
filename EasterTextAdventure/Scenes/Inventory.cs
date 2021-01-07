@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using EasterTextAdventure.HelperFunctions;
 
 namespace EasterTextAdventure.Scenes
 {
@@ -11,8 +12,8 @@ namespace EasterTextAdventure.Scenes
         int selectedItem;
         public InventoryScene(Game game) : base(game)
         {
-            sceneArt = "";
-            text = art + desc + "\n\n" + "select an item to view its description \n";
+            sceneArt = Art.Art.inventory();
+            text = sceneArt + desc + "\n\n" + "select an item to view its description \n";
             myGame = game;
 
         }
@@ -23,7 +24,7 @@ namespace EasterTextAdventure.Scenes
 
 
             //Scene.AddScene(this.GetType().Name);
-
+        
 
             List<string> iterateOptions = new List<string>();
 
@@ -40,7 +41,7 @@ namespace EasterTextAdventure.Scenes
 
             if (myGame.myInventory.invGet().Count == 0)
             {
-                text = art + "\nThere is nothing in your inventory\n";
+                text = sceneArt + "\nThere is nothing in your inventory\n";
             }
 
             HelperFunctions.OptionsHelper opts_helper = new HelperFunctions.OptionsHelper(text, options);
@@ -53,17 +54,18 @@ namespace EasterTextAdventure.Scenes
             if (selectedItem == iterateOptions.Count)
             {
 
-                desc = "";
+                desc = "\nselect an item to view its description \n";
 
-                sceneArt = "";
-                text = art + desc;
+
+                sceneArt = Art.Art.inventory();
+                text = sceneArt + desc;
             }
 
             else if (selectedItem > 0)
             {
 
                 desc = myGame.myInventory.invGet()[selectedItem - 1].getDescription();
-                text = art + desc + "\n\n" + "select an item to view its description \n";
+                text = sceneArt + desc + "\n\n" + "select an item to view its description \n";
                 myGame.myInventoryScene.Run();
                 selectedItem = 0;
 

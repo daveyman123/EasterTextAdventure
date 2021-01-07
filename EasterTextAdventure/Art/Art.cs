@@ -21,5 +21,9 @@ namespace EasterTextAdventure.Art
         public static string Bunny2() {
             return ArtReadHelper.ascii("bunny2");
                 }
+        public static string inventory()
+        {
+            return ArtReadHelper.ascii("inventory");
+        }
     }
 }
